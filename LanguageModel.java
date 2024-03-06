@@ -95,6 +95,7 @@ public class LanguageModel {
         return initialText;
 	}
 
+    /** Returns a string representing the map of this language model. */
 	public String toString() {
 		StringBuilder str = new StringBuilder();
 		for (String key : CharDataMap.keySet()) {
@@ -105,5 +106,6 @@ public class LanguageModel {
 	}
 
     public static void main(String[] args) {
+		// Your code goes here
     }
 }

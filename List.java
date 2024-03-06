@@ -8,7 +8,7 @@ public class List {
     // Points to the first node in this list
     private Node first;
 
-      // The number of elements in this list
+    // The number of elements in this list
     private int size;
 	
     /** Constructs an empty list. */
@@ -106,8 +106,8 @@ public class List {
 	    Node current = first;
 	    int i = 0;
         while (current != null) {
-        arr[i++]  = current.cp;
-    	current = current.next;
+    	    arr[i++]  = current.cp;
+    	    current = current.next;
         }
         return arr;
     }
@@ -120,8 +120,8 @@ public class List {
 	    Node current = first;
 	    int i = 0;
         while (i < index) {
-         current = current.next;
-         i++;
+            current = current.next;
+            i++;
         }
         // Returns an iterator that starts in that element
 	    return new ListIterator(current);
